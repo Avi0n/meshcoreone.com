@@ -2,8 +2,19 @@
    MeshCore One marketing site
    Aesthetic: Apple product-page composition on the meshcore.io dark palette.
    Fonts: native SF Pro on Apple devices (system stack, no files shipped),
-          Inter (SIL OFL) fallback elsewhere.
+          Inter (SIL OFL) fallback elsewhere — self-hosted, no third-party
+          requests (see fonts/InterVariable.woff2, fonts/OFL.txt).
    ========================================================================= */
+
+/* Inter variable font, self-hosted for privacy (no Google Fonts CDN call).
+   Single file covers the full 100–900 range, incl. the 450/590 weights used. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("fonts/InterVariable.woff2") format("woff2");
+}
 
 :root {
   /* Surfaces: meshcore.io slate palette, slightly deepened for hero drama */
