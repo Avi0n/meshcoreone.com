@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | MeshCore One</title>
+  <meta name="description" content="The MeshCore One privacy policy. The app works offline with no accounts, no analytics, and no third-party tracking. Your data stays on your device." />
+  <meta name="theme-color" content="#0b0e16" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="mesh-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="MeshCore One home">
+        <span class="mark"><img src="assets/icon-rounded.png" alt="" /></span>
+        <span>MeshCore One</span>
+      </a>
+      <div class="nav-links">
+        <a class="link" href="index.html#features">Features</a>
+        <a class="link" href="index.html#screens">Screens</a>
+        <a class="link" href="index.html#start">Get started</a>
+        <a class="link" href="https://github.com/Avi0n/MeshCoreOne" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="https://testflight.apple.com/join/YjGNDTaE" target="_blank" rel="noopener">Get the app</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== LEGAL ===================== -->
+  <main class="legal">
+    <div class="wrap">
+      <a class="back" href="index.html">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        Back to home
+      </a>
+
+      <h1 class="reveal">Privacy Policy</h1>
+      <p class="updated reveal d1">Last updated: June 8, 2026</p>
+
+      <p class="lede reveal d1">MeshCore One ("the app", "MC1") is an offline-first MeshCore client for iPhone, iPad, and Mac. It is built to operate without the internet, and it is designed around a simple principle: <strong>your data stays on your device</strong>. The app has no user accounts, no backend servers operated by us, and no analytics or third-party tracking.</p>
+
+      <nav class="toc reveal d2" aria-label="Sections">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#ondevice">Data stored on your device</a></li>
+          <li><a href="#mesh">Data sent over the mesh</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#notifications">Push notifications</a></li>
+          <li><a href="#connectivity">Bluetooth &amp; local network</a></li>
+          <li><a href="#nocollect">What we do not collect</a></li>
+          <li><a href="#thirdparty">Third-party services</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <section id="summary" class="reveal">
+          <h2><span class="n">01</span>Summary</h2>
+          <p>MeshCore One does not collect, transmit, or sell your personal information to us or to any third party. The app communicates with your MeshCore radio hardware and with the mesh network itself, not with servers we control. Everything the app stores lives in your device's local app storage and is removed when you delete the app.</p>
+        </section>
+
+        <section id="ondevice" class="reveal">
+          <h2><span class="n">02</span>Data stored on your device</h2>
+          <p>To function, the app stores the following locally on your device only:</p>
+          <ul>
+            <li><strong>Messages and conversations:</strong> direct messages, channels, and room-server history you send or receive.</li>
+            <li><strong>Contacts and nodes:</strong> names, public keys, and metadata for contacts and repeaters discovered on the mesh.</li>
+            <li><strong>Network &amp; diagnostic data:</strong> saved paths, RX logs, telemetry history, and line-of-sight results you generate.</li>
+            <li><strong>App settings:</strong> your preferences, radio presets, and connection configuration.</li>
+          </ul>
+          <p>This data is never uploaded to us. You can export or delete it from within the app, and uninstalling the app erases it from your device.</p>
+        </section>
+
+        <section id="mesh" class="reveal">
+          <h2><span class="n">03</span>Data sent over the mesh</h2>
+          <p>MeshCore One is a messaging client, so content you choose to send (messages, reactions, your shared position, adverts, and node commands) is transmitted over the MeshCore radio network to its intended recipients. MeshCore uses end-to-end encryption for direct and private messages; public channels are, by design, readable by anyone with the channel key.</p>
+          <p>Because the mesh is a decentralized radio network, messages may be relayed by intermediate repeater nodes operated by other people in order to reach their destination. We do not operate this network and cannot see, log, or control its traffic.</p>
+        </section>
+
+        <section id="location" class="reveal">
+          <h2><span class="n">04</span>Location</h2>
+          <p>Location access is <strong>optional</strong> and used only for features you explicitly enable, such as sharing your position with contacts or placing your node on the map. Your location is used on-device and is only transmitted over the mesh when you choose to share it. The app does not send your location to us or to any analytics service. You can revoke location access at any time in iOS Settings.</p>
+        </section>
+
+        <section id="notifications" class="reveal">
+          <h2><span class="n">05</span>Push notifications</h2>
+          <p>If you enable notifications, iOS issues a push token through Apple Push Notification service (APNs) so the app can alert you to new messages. This token is handled by Apple's infrastructure and is not used by us to identify or track you. Message content for local alerts is processed on your device. You can disable notifications at any time in iOS Settings.</p>
+        </section>
+
+        <section id="connectivity" class="reveal">
+          <h2><span class="n">06</span>Bluetooth &amp; local network</h2>
+          <p>The app uses <strong>Bluetooth</strong> and your <strong>local network (WiFi)</strong> solely to discover and communicate with your MeshCore companion hardware. These permissions are required to pair and exchange data with your radio. No Bluetooth or network data is collected by us or shared with third parties.</p>
+        </section>
+
+        <section id="nocollect" class="reveal">
+          <h2><span class="n">07</span>What we do not collect</h2>
+          <ul>
+            <li>No accounts, sign-ups, email addresses, or phone numbers.</li>
+            <li>No analytics, telemetry, advertising identifiers, or behavioral tracking.</li>
+            <li>No cloud backup of your messages or contacts on servers we operate.</li>
+            <li>No sale or sharing of personal data, because there is none to sell.</li>
+          </ul>
+        </section>
+
+        <section id="thirdparty" class="reveal">
+          <h2><span class="n">08</span>Third-party services</h2>
+          <p>The app relies on a small number of platform services to function:</p>
+          <ul>
+            <li><strong>Apple:</strong> for app distribution (TestFlight / App Store), push notification delivery (APNs), and map tiles when you use the map. Apple's handling of this data is governed by <a class="inline" href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
+            <li><strong>Map imagery:</strong> standard, satellite, and hybrid map tiles are provided by Apple Maps and loaded only when you open the map.</li>
+          </ul>
+          <p>We do not embed third-party advertising or analytics SDKs.</p>
+        </section>
+
+        <section id="security" class="reveal">
+          <h2><span class="n">09</span>Security</h2>
+          <p>Message encryption is provided by the MeshCore protocol for direct and private communications. Data stored on your device is protected by iOS's standard app sandboxing and device-level encryption. Because the app is open source, anyone can review exactly how it handles data. No system is perfectly secure, and public channels are intentionally readable by anyone holding the channel key.</p>
+        </section>
+
+        <section id="children" class="reveal">
+          <h2><span class="n">10</span>Children</h2>
+          <p>MeshCore One is a general-purpose communications and radio tool and is not directed at children. It does not knowingly collect personal information from anyone, including children under 13.</p>
+        </section>
+
+        <section id="changes" class="reveal">
+          <h2><span class="n">11</span>Changes to this policy</h2>
+          <p>We may update this policy as the app evolves. Material changes will be reflected here with an updated date above. Because the project is open source, the full revision history is available in the project's public repository.</p>
+        </section>
+
+        <section id="contact" class="reveal">
+          <h2><span class="n">12</span>Contact</h2>
+          <p>MeshCore One is a free and open-source project. Questions about privacy can be raised as an issue on the <a class="inline" href="https://github.com/Avi0n/MeshCoreOne/issues" target="_blank" rel="noopener">project's GitHub repository</a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="mark"><img src="assets/icon-rounded.png" alt="" /></span>
+          <span>MeshCore One</span>
+        </a>
+        <p class="tag">A native iPhone, iPad, and Mac client for the MeshCore mesh network. Built for the community.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>App</h4>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#screens">Screens</a>
+          <a href="index.html#start">Get started</a>
+          <a href="https://testflight.apple.com/join/YjGNDTaE" target="_blank" rel="noopener">TestFlight</a>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <a href="https://github.com/Avi0n/MeshCoreOne" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/Avi0n/MeshCoreOne/releases" target="_blank" rel="noopener">Releases</a>
+          <a href="https://meshcore.io" target="_blank" rel="noopener">MeshCore.io</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="https://github.com/Avi0n/MeshCoreOne/blob/main/LICENSE" target="_blank" rel="noopener">License (GPLv3)</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <p>© 2026 MeshCore One. Released under the GNU GPLv3.</p>
+        <p>Not affiliated with Apple Inc. iOS, iPadOS, and macOS are trademarks of Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
